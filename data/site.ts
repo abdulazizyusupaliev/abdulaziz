@@ -125,7 +125,7 @@ export const heroHighlights = [
 ];
 
 export const heroDescription =
-  "I build clean, responsive, and modern web interfaces with React, Next.js, TypeScript, and Tailwind CSS while expanding into AI engineering, machine learning, and practical Python tooling.";
+  "I build modern web interfaces with React, Next.js, TypeScript, and Tailwind CSS while expanding into AI engineering, machine learning, and practical Python tooling.";
 
 export const heroSocialLinks = [
   {
