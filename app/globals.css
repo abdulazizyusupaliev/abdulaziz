@@ -1,26 +1,125 @@
+@import "@fontsource/montserrat/700.css";
+@import "@fontsource/montserrat/800.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: rgba(255, 255, 255, 0.62);
+  --surface: #050505;
+  --surface-strong: #0c0c0c;
+  --border: rgba(255, 255, 255, 0.12);
+  --font-sans: "Poppins", "Segoe UI Variable", "Trebuchet MS", Verdana, sans-serif;
+  --font-display: "Montserrat", "Poppins", sans-serif;
+  --font-mono: Consolas, "Courier New", monospace;
+  --hero-accent: #d4a017;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--foreground);
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.section-kicker {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.section-title {
+  max-width: 16ch;
+  font-size: clamp(2.2rem, 3.8vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: white;
+  font-family: var(--font-display);
+}
+
+.section-copy {
+  max-width: 42rem;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.card-surface {
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: var(--surface);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.hero-accent {
+  color: var(--hero-accent);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.blink-cursor {
+  display: inline-block;
+  width: 1ch;
+  color: var(--hero-accent);
+  animation: blink-cursor 1s steps(1, end) infinite;
+}
+
+@keyframes blink-cursor {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    max-width: none;
+  }
 }

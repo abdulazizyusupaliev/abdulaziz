@@ -1,0 +1,29 @@
+Abdulaziz Yusupaliev
+Frontend Developer & AI Engineering Learner
+
+Location: Tashkent, Uzbekistan
+Email: abdulazizyusupaliev009@gmail.com
+GitHub: https://github.com/abdulazizyusupaliev
+LinkedIn: https://www.linkedin.com/in/abdulaziz-yusupaliev-521166377
+Telegram: https://t.me/d_vaderrr
+
+Summary:
+I build clean, responsive, and modern web interfaces with React, Next.js,
+TypeScript, and Tailwind CSS while expanding into AI engineering, machine
+learning, and practical Python tooling.
+
+Core Stack:
+- React
+- Next.js
+- JavaScript
+- TypeScript
+- HTML5
+- CSS3
+- Tailwind CSS
+- Git
+- GitHub
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Vercel
