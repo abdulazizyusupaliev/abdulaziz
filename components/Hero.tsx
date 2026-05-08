@@ -49,7 +49,7 @@ export function Hero() {
             </div>
 
             <div className="space-y-6">
-              <h1 className="font-display max-w-4xl text-5xl font-extrabold leading-[0.88] tracking-[-0.07em] text-white sm:text-6xl lg:text-[5.8rem]">
+              <h1 className="font-display max-w-4xl text-6xl">
                 Abdulaziz
                 <br />
                 Yusupaliev
@@ -58,8 +58,7 @@ export function Hero() {
               <p className="font-display max-w-3xl text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-[2.15rem]">
                 <span className="hero-accent">Frontend Developer</span>
                 <span className="text-white/68"> &amp; </span>
-                <span className="hero-accent">AI Engineering</span>
-                <span className="text-white/68"> Learner</span>
+                <span className="hero-accent">AI Engineer</span>
               </p>
 
               <p className="max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
