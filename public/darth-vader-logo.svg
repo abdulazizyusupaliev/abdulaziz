@@ -1,0 +1,54 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Darth Vader portrait">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 216) rotate(90) scale(180 180)">
+      <stop offset="0" stop-color="#7F1D1D" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#7F1D1D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="helmet" x1="150" y1="72" x2="362" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1A1D"/>
+      <stop offset="0.5" stop-color="#050505"/>
+      <stop offset="1" stop-color="#101114"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="182" y1="178" x2="330" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A0B0B"/>
+      <stop offset="1" stop-color="#0A0A0A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="transparent"/>
+  <ellipse cx="256" cy="278" rx="160" ry="182" fill="url(#glow)"/>
+
+  <path d="M156 148C175 103 216 74 256 74C296 74 337 103 356 148L375 214C384 246 382 283 368 313L346 360C331 392 302 414 270 420L256 422L242 420C210 414 181 392 166 360L144 313C130 283 128 246 137 214L156 148Z" fill="url(#helmet)"/>
+  <path d="M180 135C195 104 225 84 256 84C287 84 317 104 332 135L346 180C352 198 350 218 341 234L327 259C316 277 298 290 278 296L256 303L234 296C214 290 196 277 185 259L171 234C162 218 160 198 166 180L180 135Z" fill="#050505"/>
+
+  <path d="M187 168C209 151 232 142 256 142C280 142 303 151 325 168L314 204C303 225 283 238 256 244C229 238 209 225 198 204L187 168Z" fill="url(#metal)"/>
+
+  <path d="M197 206L227 221L219 249L190 236L197 206Z" fill="#090909"/>
+  <path d="M315 206L286 221L294 249L323 236L315 206Z" fill="#090909"/>
+
+  <path d="M222 172C230 160 242 154 256 154C270 154 282 160 290 172L281 191C274 199 266 203 256 204C246 203 238 199 231 191L222 172Z" fill="#1A1A1A"/>
+
+  <path d="M218 176C226 171 235 168 244 168H268C277 168 286 171 294 176L286 198C281 208 270 215 256 217C242 215 231 208 226 198L218 176Z" fill="#0D0D0D"/>
+  <path d="M225 178C230 176 235 175 240 175H272C277 175 282 176 287 178L281 194C277 201 269 206 256 208C243 206 235 201 231 194L225 178Z" fill="#121212"/>
+
+  <path d="M208 168C214 159 222 153 231 150L228 172C225 183 220 190 212 194L208 168Z" fill="#111111"/>
+  <path d="M304 168C298 159 290 153 281 150L284 172C287 183 292 190 300 194L304 168Z" fill="#111111"/>
+
+  <path d="M256 250L243 273L256 283L269 273L256 250Z" fill="#7F1D1D"/>
+  <path d="M228 286C239 293 247 297 256 298C265 297 273 293 284 286L291 312C284 325 272 334 256 336C240 334 228 325 221 312L228 286Z" fill="#141414"/>
+  <path d="M205 322C221 356 236 378 256 383C276 378 291 356 307 322L292 357C281 380 270 394 256 396C242 394 231 380 220 357L205 322Z" fill="#0B0B0B"/>
+
+  <path d="M177 344C195 379 221 401 256 406C291 401 317 379 335 344L346 389C344 405 333 416 316 425C299 434 278 438 256 438C234 438 213 434 196 425C179 416 168 405 166 389L177 344Z" fill="#090909"/>
+
+  <path d="M172 318C190 353 219 378 256 384C293 378 322 353 340 318L353 352C348 378 329 397 300 412C282 422 270 426 256 426C242 426 230 422 212 412C183 397 164 378 159 352L172 318Z" fill="#050505"/>
+
+  <ellipse cx="223" cy="214" rx="18" ry="12" fill="#B91C1C"/>
+  <ellipse cx="289" cy="214" rx="18" ry="12" fill="#B91C1C"/>
+  <ellipse cx="223" cy="214" rx="7" ry="4" fill="#FF4D4D"/>
+  <ellipse cx="289" cy="214" rx="7" ry="4" fill="#FF4D4D"/>
+
+  <path d="M243 241L256 257L269 241" stroke="#2A2A2A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M191 152C212 120 230 106 256 106C282 106 300 120 321 152" stroke="#1D1D1D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M168 188C178 158 198 136 223 124" stroke="#242424" stroke-width="8" stroke-linecap="round"/>
+  <path d="M344 188C334 158 314 136 289 124" stroke="#242424" stroke-width="8" stroke-linecap="round"/>
+</svg>

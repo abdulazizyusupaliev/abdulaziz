@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navItems } from "@/data/site";
@@ -39,12 +40,18 @@ export function Navbar() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between py-5">
         <a
           href="#home"
+          aria-label="Go to home"
           className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.32em] text-white transition hover:text-white/70"
         >
-          <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-white/10 shadow-lg shadow-black/20">
-            <img src="/image.png" alt="Darth Vader logo" className="h-6 w-6 bg-auto" />
+          <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-black/40 shadow-lg shadow-black/20">
+            <Image
+              src="/darth-vader-logo.svg"
+              alt="Darth Vader logo"
+              width={40}
+              height={40}
+              className="h-full w-full object-cover"
+            />
           </span>
-          AY
         </a>
 
         <nav className="hidden items-center gap-6 sm:flex">

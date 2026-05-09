@@ -68,39 +68,6 @@ export function Skills() {
                 </section>
               ))}
             </div>
-
-            <div className="mt-10 border-t border-white/10 pt-8">
-              <ul className="space-y-3 text-base leading-8 text-white/92">
-                <li>
-                  <span className="font-semibold text-white">Languages:</span>{" "}
-                  <span className="text-white/82">
-                    JavaScript, TypeScript, Python.
-                  </span>
-                </li>
-                <li>
-                  <span className="font-semibold text-white">Frontend:</span>{" "}
-                  <span className="text-white/82">React, Next.js.</span>
-                </li>
-                <li>
-                  <span className="font-semibold text-white">Styling:</span>{" "}
-                  <span className="text-white/82">
-                    HTML5, CSS3, Tailwind CSS, Bootstrap, Pug.
-                  </span>
-                </li>
-                <li>
-                  <span className="font-semibold text-white">Tools:</span>{" "}
-                  <span className="text-white/82">
-                    Git, GitHub, GitLab, npm, Vercel.
-                  </span>
-                </li>
-                <li>
-                  <span className="font-semibold text-white">AI / ML:</span>{" "}
-                  <span className="text-white/82">
-                    Python, Pandas, NumPy, Scikit-learn.
-                  </span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </SectionReveal>
