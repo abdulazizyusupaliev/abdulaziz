@@ -56,9 +56,9 @@ export function Hero() {
               </h1>
 
               <p className="font-display max-w-3xl text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-[2.15rem]">
-                <span className="hero-accent">Frontend Developer</span>
-                <span className="text-white/68"> &amp; </span>
                 <span className="hero-accent">AI Engineer</span>
+                <span className="text-white/68"> &amp; </span>
+                <span className="hero-accent">Frontend Developer</span>
               </p>
 
               <p className="max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
