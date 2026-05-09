@@ -35,12 +35,15 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-black bg-opacity-20 backdrop-blur-lg px-4 sm:px-6">
+    <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/20 shadow-black/20 backdrop-blur-2xl px-4 sm:px-6">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between py-5">
         <a
           href="#home"
-          className="text-sm font-semibold uppercase tracking-[0.32em] text-white transition hover:text-white/70"
+          className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.32em] text-white transition hover:text-white/70"
         >
+          <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-white/10 shadow-lg shadow-black/20">
+            <img src="/image.png" alt="Darth Vader logo" className="h-6 w-6 bg-auto" />
+          </span>
           AY
         </a>
 

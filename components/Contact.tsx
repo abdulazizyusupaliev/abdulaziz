@@ -6,8 +6,8 @@ export function Contact() {
   return (
     <section id="contact" className="border-t border-white/10 px-4 py-20 sm:px-6">
       <SectionReveal className="mx-auto w-full max-w-6xl">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start">
-          <div className="space-y-4">
+        <div className="space-y-12">
+          <div className="section-heading">
             <p className="section-kicker">Contact</p>
             <h2 className="section-title">
               Open to connection, collaboration, and future opportunities.

@@ -5,7 +5,7 @@ export function Projects() {
   return (
     <section id="projects" className="border-t border-white/10 px-4 py-20 sm:px-6">
       <SectionReveal className="mx-auto w-full max-w-6xl">
-        <div className="max-w-3xl space-y-4">
+        <div className="section-heading">
           <p className="section-kicker">Projects</p>
           <h2 className="section-title">
             The structure is ready for real project launches.

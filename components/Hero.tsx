@@ -2,13 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Download } from "lucide-react";
+import { Download, MapPin } from "lucide-react";
 import {
   greetings,
   heroDescription,
+  heroLocation,
   heroSocialLinks,
 } from "@/data/site";
 import { HeroTechCloud } from "./HeroTechCloud";
+import { HeroWaveBackground } from "./HeroWaveBackground";
 
 export function Hero() {
   const [index, setIndex] = useState(0);
@@ -24,9 +26,13 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="px-4 pb-24 pt-24 sm:px-6 sm:pb-28 sm:pt-32 lg:pb-32"
+      className="relative overflow-hidden px-4 pb-24 pt-24 sm:px-6 sm:pb-28 sm:pt-32 lg:pb-32"
     >
-      <div className="mx-auto grid w-full max-w-6xl gap-14 lg:grid-cols-[minmax(0,1.02fr)_minmax(320px,0.98fr)] lg:items-center">
+      <HeroWaveBackground />
+
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.12),transparent_24%,transparent_76%,rgba(0,0,0,0.18))]" />
+
+      <div className="relative mx-auto grid w-full max-w-6xl gap-14 lg:grid-cols-[minmax(0,1.02fr)_minmax(320px,0.98fr)] lg:items-center">
         <div className="space-y-9">
           <div className="space-y-5">
             <div className="min-h-9 text-sm font-medium uppercase tracking-[0.32em] text-white/55 sm:text-base">
@@ -38,7 +44,7 @@ export function Hero() {
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.28, ease: "easeOut" }}
                   className="inline-block"
-                  dir={index === 2 ? "rtl" : "ltr"}
+                  dir="ltr"
                 >
                   {greetings[index]}
                 </motion.span>
@@ -49,6 +55,11 @@ export function Hero() {
             </div>
 
             <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/70 backdrop-blur-sm">
+                <MapPin className="h-4 w-4 text-[#d4a017]" />
+                <span>{heroLocation}</span>
+              </div>
+
               <h1 className="font-display max-w-4xl text-6xl">
                 Abdulaziz
                 <br />
@@ -56,9 +67,9 @@ export function Hero() {
               </h1>
 
               <p className="font-display max-w-3xl text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-[2.15rem]">
-                <span className="hero-accent">AI Engineer</span>
-                <span className="text-white/68"> &amp; </span>
                 <span className="hero-accent">Frontend Developer</span>
+                <span className="text-white/68"> &amp; </span>
+                <span className="hero-accent">AI Engineering Learner</span>
               </p>
 
               <p className="max-w-2xl text-base leading-8 text-white/62 sm:text-lg">

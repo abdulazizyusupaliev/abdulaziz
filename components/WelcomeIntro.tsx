@@ -87,8 +87,8 @@ export function WelcomeIntro() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -18 }}
                   transition={{ duration: 0.32, ease: "easeOut" }}
-                  className="text-5xl font-semibold tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl"
-                  dir={index === 2 ? "rtl" : "ltr"}
+                  className="font-display text-5xl font-semibold tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl"
+                  dir="ltr"
                 >
                   {greetings[index]}
                 </motion.div>
