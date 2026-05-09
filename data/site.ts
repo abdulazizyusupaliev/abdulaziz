@@ -18,7 +18,6 @@ import {
   siTailwindcss,
   siTypescript,
   siVercel,
-  siVscodium,
 } from "simple-icons";
 import {
   ArrowUpRight,
@@ -88,9 +87,9 @@ export type HeroTechIcon = {
 };
 
 export const siteMetadata = {
-  title: "Abdulaziz Yusupaliev | Frontend Developer & Beginner AI Engineer",
+  title: "Abdulaziz Yusupaliev | Frontend Developer & AI Engineering Learner",
   description:
-    "Personal portfolio website of Abdulaziz Yusupaliev, a frontend developer from Tashkent learning AI engineering and machine learning.",
+    "Personal portfolio website of Abdulaziz Yusupaliev, a frontend developer from Tashkent focused on modern interfaces and practical AI engineering growth.",
   keywords: [
     "Abdulaziz Yusupaliev",
     "Frontend Developer",
@@ -107,15 +106,17 @@ export const navItems: NavItem[] = [
   { id: "home", label: "Home" },
   { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
 ];
 
 export const greetings = [
   "Hello",
   "\u041F\u0440\u0438\u0432\u0435\u0442",
-  "\u0645\u0631\u062D\u0628\u0627",
   "Salom",
-  "Hola",
+  "Assalomu alaykum",
+  "Hi",
 ];
 
 export const heroHighlights = [
@@ -125,7 +126,9 @@ export const heroHighlights = [
 ];
 
 export const heroDescription =
-  "I build modern web interfaces with React, Next.js, TypeScript, and Tailwind CSS while expanding into AI engineering, machine learning, and practical Python tooling.";
+  "I build clean, responsive web interfaces with React, Next.js, TypeScript, and Tailwind CSS while growing into AI engineering, machine learning, and practical Python tooling.";
+
+export const heroLocation = "Tashkent, Uzbekistan";
 
 export const heroSocialLinks = [
   {
@@ -165,7 +168,6 @@ export const heroTechCloud: HeroTechIcon[] = [
   { name: "NumPy", icon: siNumpy, size: 34, x: "58%", y: "62%", opacity: 0.72, delay: 0.5, duration: 8.2, rotate: 5 },
   { name: "Scikit-learn", icon: siScikitlearn, size: 36, x: "78%", y: "60%", opacity: 0.78, delay: 0.2, duration: 7.4, rotate: -5 },
   { name: "Vercel", icon: siVercel, size: 28, x: "26%", y: "78%", opacity: 0.56, delay: 0.7, duration: 8.5, rotate: 2 },
-  { name: "VS Code", icon: siVscodium, size: 36, x: "64%", y: "80%", opacity: 0.7, delay: 0.9, duration: 7.6, rotate: -7 },
 ];
 
 export const skillIcons: SkillIcon[] = [
@@ -192,31 +194,28 @@ export const skillIcons: SkillIcon[] = [
 export const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
-    summary: "Core languages for modern frontend work and AI/ML learning.",
+    summary: "Core languages for my frontend work and technical growth.",
     items: ["JavaScript", "TypeScript", "Python"],
   },
   {
     title: "Frontend",
-    summary: "Frameworks and UI tools used to build modern web interfaces.",
-    items: ["React", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Pug"],
+    summary: "Libraries and frameworks I use to build web interfaces.",
+    items: ["React", "Next.js"],
   },
   {
-    title: "Developer Tools",
-    summary: "Workflow tools for version control, packages, and deployment.",
+    title: "Styling",
+    summary: "Markup and styling tools for clean responsive UI.",
+    items: ["HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Pug"],
+  },
+  {
+    title: "Tools",
+    summary: "Workflow, version control, and deployment tools.",
     items: ["Git", "GitHub", "GitLab", "npm", "Vercel"],
   },
   {
     title: "AI / ML",
-    summary: "Current learning path around data, models, and practical deployment.",
-    items: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "Machine learning fundamentals",
-      "ML deployment basics",
-      "AI engineering basics",
-    ],
+    summary: "Python-based data and machine learning basics.",
+    items: ["Python", "Pandas", "NumPy", "Scikit-learn"],
   },
 ];
 
