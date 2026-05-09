@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Manrope, Space_Grotesk } from "next/font/google";
+import { Manrope, Space_Grotesk, Geist } from "next/font/google";
 import { siteMetadata } from "@/data/site";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const manrope = Manrope({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-sans",
-});
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -33,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", spaceGrotesk.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

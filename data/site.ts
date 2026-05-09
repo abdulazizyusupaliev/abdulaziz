@@ -210,7 +210,7 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Tools",
     summary: "Workflow, version control, and deployment tools.",
-    items: ["Git", "GitHub", "GitLab", "npm", "Vercel"],
+    items: ["Git", "GitHub", "GitLab", "npm"],
   },
   {
     title: "AI / ML",

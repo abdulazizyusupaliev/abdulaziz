@@ -11,6 +11,7 @@ import {
 } from "@/data/site";
 import { HeroTechCloud } from "./HeroTechCloud";
 import { HeroWaveBackground } from "./HeroWaveBackground";
+import TextType from "./TextType";
 
 export function Hero() {
   const [index, setIndex] = useState(0);
@@ -61,9 +62,15 @@ export function Hero() {
               </div>
 
               <h1 className="font-display max-w-4xl text-6xl">
-                Abdulaziz
-                <br />
-                Yusupaliev
+                <TextType
+                  text={["Abdulaziz", "Yusupaliev"]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor
+                  cursorCharacter="|"
+                  deletingSpeed={50}
+                  cursorBlinkDuration={0.5}
+                />
               </h1>
 
               <p className="font-display max-w-3xl text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-[2.15rem]">
