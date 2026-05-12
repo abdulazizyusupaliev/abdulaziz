@@ -1147,3 +1147,16 @@ This portfolio should start simple but be built in a way that makes future expan
 The first version does not need too many effects or complex features. A clear personal brand, strong Hero section, clean Skills section, and simple Contact section are enough to make it useful.
 
 Projects can be added later when they are ready.
+
+---
+
+## 28. Folder Structure Rule
+
+Keep the component tree split by responsibility.
+
+- `components/layout/` is for site shell pieces such as the navbar and footer.
+- `components/sections/<section>/` is for section-specific components and any helpers used only by that section.
+- `components/shared/` is for reusable UI primitives that can be shared across sections.
+- Do not add new flat files directly under `components/` once a component has a clear home.
+- If a component is only used by one section, keep it inside that section folder.
+- If a component is not being used anywhere and has no clear purpose yet, leave it out of section folders until it is actually needed.

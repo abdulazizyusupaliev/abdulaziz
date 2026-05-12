@@ -36,14 +36,14 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/20 shadow-black/20 backdrop-blur-2xl px-4 sm:px-6">
+    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-neutral-950/50 px-4 shadow-black/20 backdrop-blur-2xl sm:px-6">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between py-5">
         <a
           href="#home"
           aria-label="Go to home"
           className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.32em] text-white transition hover:text-white/70"
         >
-          <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-black/40 shadow-lg shadow-black/20">
+          <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-neutral-900/70 shadow-lg shadow-black/20">
             <Image
               src="/darth-vader-logo.svg"
               alt="Darth Vader logo"
@@ -84,7 +84,7 @@ export function Navbar() {
       </div>
 
       {isOpen ? (
-        <div className="mx-auto mb-4 max-w-6xl rounded-3xl border border-white/10 bg-black p-3 sm:hidden">
+        <div className="mx-auto mb-4 max-w-6xl rounded-3xl border border-white/10 bg-neutral-950 p-3 sm:hidden">
           <nav className="flex flex-col gap-1">
             {navItems.map((item) => {
               const isActive = item.id === activeId;

@@ -1,5 +1,5 @@
 import { experienceItems } from "@/data/site";
-import { SectionReveal } from "./SectionReveal";
+import { SectionReveal } from "../../shared/SectionReveal";
 
 export function Experience() {
   return (
@@ -9,15 +9,7 @@ export function Experience() {
     >
       <SectionReveal className="mx-auto w-full max-w-6xl">
         <div className="section-heading">
-          <p className="section-kicker">Experience</p>
-          <h2 className="section-title">
-            Current work is centered on disciplined learning and practical
-            implementation.
-          </h2>
-          <p className="section-copy">
-            Formal job experience is still ahead, so this section documents the
-            strongest technical direction and the tools behind it.
-          </p>
+          <h2 className="section-kicker">Experience</h2>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">

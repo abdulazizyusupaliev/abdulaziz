@@ -1,24 +1,3 @@
-import type { SimpleIcon } from "simple-icons";
-import {
-  siBootstrap,
-  siCss,
-  siGit,
-  siGithub,
-  siGitlab,
-  siHtml5,
-  siJavascript,
-  siNextdotjs,
-  siNpm,
-  siNumpy,
-  siPandas,
-  siPug,
-  siPython,
-  siReact,
-  siScikitlearn,
-  siTailwindcss,
-  siTypescript,
-  siVercel,
-} from "simple-icons";
 import {
   ArrowUpRight,
   BriefcaseBusiness,
@@ -32,17 +11,6 @@ import {
 export type NavItem = {
   id: string;
   label: string;
-};
-
-export type SkillCategory = {
-  title: string;
-  summary: string;
-  items: string[];
-};
-
-export type SkillIcon = {
-  name: string;
-  icon: SimpleIcon;
 };
 
 export type ExperienceItem = {
@@ -74,20 +42,8 @@ export type ContactLink = {
   icon: LucideIcon;
 };
 
-export type HeroTechIcon = {
-  name: string;
-  icon: SimpleIcon;
-  size: number;
-  x: string;
-  y: string;
-  opacity: number;
-  delay: number;
-  duration: number;
-  rotate: number;
-};
-
 export const siteMetadata = {
-  title: "Abdulaziz Yusupaliev | Frontend Developer & AI Engineering Learner",
+  title: "Abdulaziz Yusupaliev | Frontend Developer & AI Engineer",
   description:
     "Personal portfolio website of Abdulaziz Yusupaliev, a frontend developer from Tashkent focused on modern interfaces and practical AI engineering growth.",
   keywords: [
@@ -95,7 +51,7 @@ export const siteMetadata = {
     "Frontend Developer",
     "React Developer",
     "Next.js",
-    "AI Engineering",
+    "AI Engineer",
     "Machine Learning",
     "Tashkent",
     "Uzbekistan",
@@ -150,72 +106,6 @@ export const heroSocialLinks = [
     label: "Telegram",
     href: "https://t.me/d_vaderrr",
     icon: Send,
-  },
-];
-
-export const heroTechCloud: HeroTechIcon[] = [
-  { name: "React", icon: siReact, size: 42, x: "14%", y: "10%", opacity: 0.92, delay: 0, duration: 7.2, rotate: -6 },
-  { name: "Next.js", icon: siNextdotjs, size: 38, x: "58%", y: "8%", opacity: 0.9, delay: 0.4, duration: 8.1, rotate: 4 },
-  { name: "JavaScript", icon: siJavascript, size: 34, x: "78%", y: "18%", opacity: 0.82, delay: 0.2, duration: 7.8, rotate: -3 },
-  { name: "TypeScript", icon: siTypescript, size: 40, x: "30%", y: "20%", opacity: 0.86, delay: 0.7, duration: 8.6, rotate: 6 },
-  { name: "HTML", icon: siHtml5, size: 34, x: "8%", y: "34%", opacity: 0.76, delay: 0.5, duration: 7.5, rotate: -8 },
-  { name: "CSS", icon: siCss, size: 36, x: "44%", y: "30%", opacity: 0.78, delay: 0.1, duration: 8.8, rotate: 5 },
-  { name: "Tailwind", icon: siTailwindcss, size: 34, x: "70%", y: "34%", opacity: 0.8, delay: 0.9, duration: 7.9, rotate: -5 },
-  { name: "GitHub", icon: siGithub, size: 36, x: "22%", y: "48%", opacity: 0.68, delay: 0.3, duration: 8.4, rotate: 4 },
-  { name: "Git", icon: siGit, size: 32, x: "85%", y: "44%", opacity: 0.72, delay: 0.6, duration: 7.1, rotate: -4 },
-  { name: "Python", icon: siPython, size: 40, x: "6%", y: "64%", opacity: 0.74, delay: 0.4, duration: 8.9, rotate: 6 },
-  { name: "Pandas", icon: siPandas, size: 30, x: "37%", y: "58%", opacity: 0.62, delay: 0.8, duration: 7.7, rotate: -6 },
-  { name: "NumPy", icon: siNumpy, size: 34, x: "58%", y: "62%", opacity: 0.72, delay: 0.5, duration: 8.2, rotate: 5 },
-  { name: "Scikit-learn", icon: siScikitlearn, size: 36, x: "78%", y: "60%", opacity: 0.78, delay: 0.2, duration: 7.4, rotate: -5 },
-  { name: "Vercel", icon: siVercel, size: 28, x: "26%", y: "78%", opacity: 0.56, delay: 0.7, duration: 8.5, rotate: 2 },
-];
-
-export const skillIcons: SkillIcon[] = [
-  { name: "React", icon: siReact },
-  { name: "JavaScript", icon: siJavascript },
-  { name: "TypeScript", icon: siTypescript },
-  { name: "Next.js", icon: siNextdotjs },
-  { name: "HTML5", icon: siHtml5 },
-  { name: "CSS3", icon: siCss },
-  { name: "Tailwind CSS", icon: siTailwindcss },
-  { name: "Bootstrap", icon: siBootstrap },
-  { name: "Pug", icon: siPug },
-  { name: "Git", icon: siGit },
-  { name: "GitHub", icon: siGithub },
-  { name: "GitLab", icon: siGitlab },
-  { name: "npm", icon: siNpm },
-  { name: "Vercel", icon: siVercel },
-  { name: "Python", icon: siPython },
-  { name: "Pandas", icon: siPandas },
-  { name: "NumPy", icon: siNumpy },
-  { name: "Scikit-learn", icon: siScikitlearn },
-];
-
-export const skillCategories: SkillCategory[] = [
-  {
-    title: "Languages",
-    summary: "Core languages for my frontend work and technical growth.",
-    items: ["JavaScript", "TypeScript", "Python"],
-  },
-  {
-    title: "Frontend",
-    summary: "Libraries and frameworks I use to build web interfaces.",
-    items: ["React", "Next.js"],
-  },
-  {
-    title: "Styling",
-    summary: "Markup and styling tools for clean responsive UI.",
-    items: ["HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Pug"],
-  },
-  {
-    title: "Tools",
-    summary: "Workflow, version control, and deployment tools.",
-    items: ["Git", "GitHub", "GitLab", "npm"],
-  },
-  {
-    title: "AI / ML",
-    summary: "Python-based data and machine learning basics.",
-    items: ["Python", "Pandas", "NumPy", "Scikit-learn"],
   },
 ];
 
