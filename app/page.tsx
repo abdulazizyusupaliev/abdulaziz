@@ -1,16 +1,16 @@
-import { Contact } from "@/components/Contact";
-import { Education } from "@/components/Education";
-import { Experience } from "@/components/Experience";
-import { Footer } from "@/components/Footer";
-import { Hero } from "@/components/Hero";
-import { Navbar } from "@/components/Navbar";
-import { Projects } from "@/components/Projects";
-import { Skills } from "@/components/Skills";
-import { WelcomeIntro } from "@/components/WelcomeIntro";
+import { Contact } from "@/components/sections/contact/Contact";
+import { Education } from "@/components/sections/education/Education";
+import { Experience } from "@/components/sections/experience/Experience";
+import { Hero } from "@/components/sections/hero/Hero";
+import { WelcomeIntro } from "@/components/sections/hero/WelcomeIntro";
+import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { Projects } from "@/components/sections/projects/Projects";
+import { Skills } from "@/components/sections/skills/Skills";
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-black text-white">
+    <div className="min-h-screen overflow-x-hidden bg-[#161616] text-white">
       <WelcomeIntro />
       <Navbar />
       <main>

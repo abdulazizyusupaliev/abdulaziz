@@ -1,5 +1,5 @@
 import { educationItems } from "@/data/site";
-import { SectionReveal } from "./SectionReveal";
+import { SectionReveal } from "../../shared/SectionReveal";
 
 export function Education() {
   return (
@@ -10,15 +10,7 @@ export function Education() {
       <SectionReveal className="mx-auto w-full max-w-6xl">
         <div className="space-y-12">
           <div className="section-heading">
-            <p className="section-kicker">Education</p>
-            <h2 className="section-title">
-              A student-led path focused on strong technical growth.
-            </h2>
-            <p className="section-copy">
-              The emphasis is on independent learning, practical repetition,
-              and building a foundation that can expand into internships,
-              university applications, and future technical work.
-            </p>
+            <h2 className="section-kicker">Education</h2>
           </div>
 
           <div className="grid gap-4">

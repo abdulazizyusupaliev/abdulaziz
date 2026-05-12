@@ -1,20 +1,12 @@
 import { projectItems } from "@/data/site";
-import { SectionReveal } from "./SectionReveal";
+import { SectionReveal } from "../../shared/SectionReveal";
 
 export function Projects() {
   return (
     <section id="projects" className="border-t border-white/10 px-4 py-20 sm:px-6">
       <SectionReveal className="mx-auto w-full max-w-6xl">
         <div className="section-heading">
-          <p className="section-kicker">Projects</p>
-          <h2 className="section-title">
-            The structure is ready for real project launches.
-          </h2>
-          <p className="section-copy">
-            Projects are coming soon. This version keeps the section visible so
-            the portfolio already reflects where frontend and AI engineering
-            work will be published next.
-          </p>
+          <h2 className="section-kicker">Projects</h2>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">

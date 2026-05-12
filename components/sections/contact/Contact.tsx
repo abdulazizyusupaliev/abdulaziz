@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { contactLinks } from "@/data/site";
-import { SectionReveal } from "./SectionReveal";
+import { SectionReveal } from "../../shared/SectionReveal";
 
 export function Contact() {
   return (
@@ -8,14 +8,7 @@ export function Contact() {
       <SectionReveal className="mx-auto w-full max-w-6xl">
         <div className="space-y-12">
           <div className="section-heading">
-            <p className="section-kicker">Contact</p>
-            <h2 className="section-title">
-              Open to connection, collaboration, and future opportunities.
-            </h2>
-            <p className="section-copy">
-              The first version keeps contact simple: direct links, clear
-              identity, and no unnecessary form friction.
-            </p>
+            <h2 className="section-kicker">Contact</h2>
           </div>
 
           <div className="grid gap-4">

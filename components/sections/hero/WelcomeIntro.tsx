@@ -71,7 +71,7 @@ export function WelcomeIntro() {
               ? { opacity: 1 }
               : { opacity: 1, y: "-100%", transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] } }
           }
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#161616]"
           aria-label="Welcome intro"
         >
           <div className="flex flex-col items-center gap-8 px-6 text-center">
