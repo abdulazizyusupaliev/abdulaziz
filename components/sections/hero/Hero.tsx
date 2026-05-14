@@ -10,6 +10,7 @@ import {
   heroSocialLinks,
 } from "@/data/site";
 import { HeroTechCloud } from "./HeroTechCloud";
+import { HeroSocialIcon } from "./HeroSocialIcon";
 import { HeroWaveBackground } from "./HeroWaveBackground";
 import TextType from "./TextType";
 
@@ -87,8 +88,6 @@ export function Hero() {
 
           <div className="flex flex-wrap items-center gap-3">
             {heroSocialLinks.map((link) => {
-              const Icon = link.icon;
-
               return (
                 <a
                   key={link.label}
@@ -100,9 +99,9 @@ export function Hero() {
                       : undefined
                   }
                   aria-label={link.label}
-                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-white/86 transition hover:border-[#d4a017]/45 hover:bg-white/[0.07] hover:text-white"
+                  className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] p-0.5 text-white/92 transition hover:border-[#d4a017]/45 hover:bg-white/[0.07] hover:text-white"
                 >
-                  <Icon className="h-5 w-5" />
+                  <HeroSocialIcon name={link.icon} className="h-full w-full" />
                 </a>
               );
             })}
