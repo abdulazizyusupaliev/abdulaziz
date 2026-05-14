@@ -16,7 +16,8 @@ export type NavItem = {
 export type ExperienceItem = {
   title: string;
   type: string;
-  period: string;
+  companyUrl?: string;
+  period?: string;
   description: string;
   tech: string[];
 };
@@ -40,6 +41,14 @@ export type ContactLink = {
   value: string;
   href: string;
   icon: LucideIcon;
+};
+
+export type HeroSocialIconName = "github" | "linkedin" | "telegram" | "email";
+
+export type HeroSocialLink = {
+  label: string;
+  href: string;
+  icon: HeroSocialIconName;
 };
 
 export const siteMetadata = {
@@ -90,41 +99,43 @@ export const heroSocialLinks = [
   {
     label: "GitHub",
     href: "https://github.com/abdulazizyusupaliev",
-    icon: FolderGit2,
+    icon: "github",
   },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/abdulaziz-yusupaliev-521166377",
-    icon: BriefcaseBusiness,
+    icon: "linkedin",
   },
   {
     label: "Email",
     href: "mailto:abdulazizyusupaliev009@gmail.com",
-    icon: Mail,
+    icon: "email",
   },
   {
     label: "Telegram",
     href: "https://t.me/d_vaderrr",
-    icon: Send,
+    icon: "telegram",
   },
-];
+] satisfies HeroSocialLink[];
 
 export const experienceItems: ExperienceItem[] = [
   {
-    title: "Frontend Development Practice",
-    type: "Personal Learning / Practice",
-    period: "Current focus",
+    title: "Frontend Engineer",
+    type: "Hiwelcome.uz",
+    companyUrl: "https://hiwelcome.uz",
+    period: "January 2026 - Present",
     description:
-      "Building responsive layouts, reusable UI sections, and cleaner frontend workflows with a strong focus on readability, spacing, and polished interaction.",
+      "Worked as a frontend engineer, building responsive website interfaces with React and Next.js. Focused on clean component structure, TypeScript implementation, and Tailwind CSS styling.",
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
-    title: "AI Engineering Learning Journey",
-    type: "Technical Growth",
-    period: "Ongoing",
+    title: "Frontend Developer",
+    type: "Delever.uz",
+    companyUrl: "https://delever.uz",
+    period: "February 2026",
     description:
-      "Expanding from frontend work into Python-based data and model tooling, with attention to practical ML workflows and early deployment concepts.",
-    tech: ["Python", "Pandas", "NumPy", "Scikit-learn"],
+      "Worked as a frontend developer, building and improving responsive website interfaces with React and Next.js. Focused on clean component structure, Tailwind CSS styling, and practical frontend implementation in a team environment.",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
 ];
 

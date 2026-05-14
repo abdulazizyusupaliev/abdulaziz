@@ -22,7 +22,10 @@ import {
 
 export type SkillIcon = {
   name: string;
-  icon: SimpleIcon;
+  icon?: SimpleIcon;
+  category: "Language" | "Frontend" | "Styling" | "Tool" | "AI / ML";
+  glyph?: string;
+  assetSrc?: string;
 };
 
 export type PortfolioSkill = {
@@ -42,24 +45,37 @@ export type SkillGroup = {
 };
 
 export const skillIcons: SkillIcon[] = [
-  { name: "React", icon: siReact },
-  { name: "JavaScript", icon: siJavascript },
-  { name: "TypeScript", icon: siTypescript },
-  { name: "Next.js", icon: siNextdotjs },
-  { name: "HTML5", icon: siHtml5 },
-  { name: "CSS3", icon: siCss },
-  { name: "Tailwind CSS", icon: siTailwindcss },
-  { name: "Bootstrap", icon: siBootstrap },
-  { name: "Pug", icon: siPug },
-  { name: "Git", icon: siGit },
-  { name: "GitHub", icon: siGithub },
-  { name: "GitLab", icon: siGitlab },
-  { name: "npm", icon: siNpm },
-  { name: "Vercel", icon: siVercel },
-  { name: "Python", icon: siPython },
-  { name: "Pandas", icon: siPandas },
-  { name: "NumPy", icon: siNumpy },
-  { name: "Scikit-learn", icon: siScikitlearn },
+  { name: "React", icon: siReact, category: "Frontend" },
+  { name: "Next.js", icon: siNextdotjs, category: "Frontend" },
+  { name: "JavaScript", icon: siJavascript, category: "Language" },
+  { name: "TypeScript", icon: siTypescript, category: "Language" },
+  { name: "HTML5", icon: siHtml5, category: "Styling" },
+  { name: "CSS3", icon: siCss, category: "Styling" },
+  { name: "Tailwind CSS", icon: siTailwindcss, category: "Styling" },
+  { name: "Bootstrap", icon: siBootstrap, category: "Styling" },
+  { name: "Pug", icon: siPug, category: "Styling" },
+  { name: "Git", icon: siGit, category: "Tool" },
+  { name: "GitHub", icon: siGithub, category: "Tool" },
+  { name: "GitLab", icon: siGitlab, category: "Tool" },
+  { name: "npm", icon: siNpm, category: "Tool" },
+  { name: "Vercel", icon: siVercel, category: "Tool" },
+  { name: "VS Code", glyph: "VS", category: "Tool" },
+  { name: "Python", icon: siPython, category: "Language" },
+  { name: "Pandas", icon: siPandas, category: "AI / ML" },
+  { name: "NumPy", icon: siNumpy, category: "AI / ML" },
+  { name: "Scikit-learn", icon: siScikitlearn, category: "AI / ML" },
+  {
+    name: "Matplotlib",
+    assetSrc: "/matplotlib-logo.svg",
+    glyph: "ML",
+    category: "AI / ML",
+  },
+  {
+    name: "Seaborn",
+    assetSrc: "/seaborn-logo.svg",
+    glyph: "SB",
+    category: "AI / ML",
+  },
 ];
 
 export const skillGroups: SkillGroup[] = [
@@ -96,6 +112,7 @@ export const skillGroups: SkillGroup[] = [
     title: "AI & ML",
     skills: [
       { name: "Pandas", showLabel: true },
+      { name: "NumPy", showLabel: true },
       { name: "Scikit-learn", showLabel: true },
       {
         name: "Matplotlib",
