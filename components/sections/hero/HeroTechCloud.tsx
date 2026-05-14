@@ -32,11 +32,22 @@ const focusItems = [
 ];
 
 function renderSkillIcon(skill: SkillIcon) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
-      <path d={skill.icon.path} />
-    </svg>
-  );
+  if (skill.icon) {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+        <path d={skill.icon.path} />
+      </svg>
+    );
+  }
+
+  if (skill.assetSrc) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src={skill.assetSrc} alt="" className="h-4 w-4 object-contain grayscale invert" />
+    );
+  }
+
+  return <span className="font-display text-[0.58rem] font-bold">{skill.glyph}</span>;
 }
 
 export function HeroTechCloud() {
@@ -66,9 +77,6 @@ export function HeroTechCloud() {
               Building NLP AI models and crafting clean React interfaces.
             </p>
           </div>
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[#d4a017]/25 bg-[#d4a017]/10 text-[#f4d37a]">
-            <Sparkles className="h-4 w-4" />
-          </div>
         </div>
 
         <div className="relative mt-5 rounded-[1.35rem] border border-white/10 bg-black/28 p-4">
@@ -77,7 +85,7 @@ export function HeroTechCloud() {
             <span className="h-2.5 w-2.5 rounded-full bg-white/18" />
             <span className="h-2.5 w-2.5 rounded-full bg-white/12" />
             <span className="ml-2 text-[0.65rem] font-medium text-white/34">
-              craft.ts
+              portfolio.ts
             </span>
           </div>
 
@@ -137,20 +145,6 @@ export function HeroTechCloud() {
               </motion.div>
             );
           })}
-        </div>
-
-        <div className="relative mt-4 flex flex-wrap gap-2 border-t border-white/10 pt-4">
-          {tools.map((skill) => (
-            <span
-              key={skill.name}
-              className="flex h-9 items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.045] px-3 text-xs font-semibold text-white/76"
-            >
-              <span className="flex h-5 w-5 items-center justify-center rounded-lg bg-black/22 text-[#f4d37a]">
-                {renderSkillIcon(skill)}
-              </span>
-              {skill.name}
-            </span>
-          ))}
         </div>
       </div>
 

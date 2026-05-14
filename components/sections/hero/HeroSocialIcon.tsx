@@ -33,12 +33,22 @@ function LinkedInIcon({ className }: { className?: string }) {
       viewBox="0 0 24 24"
       aria-hidden="true"
       className={className}
+      role="img"
       fill="currentColor"
     >
-      <rect x="2.5" y="2.5" width="19" height="19" rx="4.75" fill="none" stroke="currentColor" strokeWidth="1.4" />
-      <path d="M7.1 10.2h2.05v6.1H7.1z" />
-      <circle cx="8.13" cy="7.55" r="1.03" />
-      <path d="M11.65 10.2h1.96v.93h.03c.46-.72 1.26-1.1 2.32-1.1 2.05 0 2.88 1.18 2.88 3.4v2.87h-2.12v-2.55c0-.95-.03-1.74-1.06-1.74-1.08 0-1.58.72-1.58 1.7v2.59h-2.43z" />
+      <rect
+        x="3"
+        y="3"
+        width="18"
+        height="18"
+        rx="4.5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.35"
+      />
+      <rect x="7.5" y="10" width="2" height="6.25" rx="1" />
+      <circle cx="8.5" cy="7.55" r="1" />
+      <path d="M12.1 10.05h1.85v.93h.03c.43-.67 1.17-1.08 2.18-1.08 1.95 0 2.74 1.12 2.74 3.23v3.12h-2v-2.84c0-1.01-.29-1.69-1.17-1.69-.91 0-1.51.68-1.51 1.69v2.84h-2.12z" />
     </svg>
   );
 }

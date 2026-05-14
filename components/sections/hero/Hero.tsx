@@ -100,6 +100,7 @@ export function Hero() {
                   }
                   aria-label={link.label}
                   className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] p-0.5 text-white/92 transition hover:border-[#d4a017]/45 hover:bg-white/[0.07] hover:text-white"
+                
                 >
                   <HeroSocialIcon name={link.icon} className="h-full w-full" />
                 </a>

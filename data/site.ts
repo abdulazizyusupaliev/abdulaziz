@@ -120,12 +120,12 @@ export const heroSocialLinks = [
 
 export const experienceItems: ExperienceItem[] = [
   {
-    title: "Frontend Developer",
+    title: "Frontend Engineer",
     type: "Hiwelcome.uz",
     companyUrl: "https://hiwelcome.uz",
     period: "January 2026 - Present",
     description:
-      "Worked as a frontend developer, building responsive website interfaces with React and Next.js. Focused on clean component structure, TypeScript implementation, and Tailwind CSS styling.",
+      "Worked as a frontend engineer, building responsive website interfaces with React and Next.js. Focused on clean component structure, TypeScript implementation, and Tailwind CSS styling.",
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
