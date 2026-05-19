@@ -1,9 +1,7 @@
 import {
-  ArrowUpRight,
   BriefcaseBusiness,
   FolderGit2,
   Mail,
-  Network,
   Send,
   type LucideIcon,
 } from "lucide-react";
@@ -36,8 +34,12 @@ export type ProjectItem = {
 
 export type EducationItem = {
   title: string;
+  provider: string;
+  period: string;
+  location: string;
   focus: string;
   description: string;
+  subjects: string[];
 };
 
 export type ContactLink = {
@@ -263,10 +265,41 @@ export const projectItems: ProjectItem[] = [
 
 export const educationItems: EducationItem[] = [
   {
-    title: "Independent Technical Learning",
-    focus: "Frontend Development & AI Engineering",
+    title: "Frontend Development Program",
+    provider: "Proweb",
+    period: "2022 - 2023",
+    location: "Tashkent, Uzbekistan",
+    focus: "HTML, CSS, JavaScript, PHP, Webpack",
     description:
-      "Student based in Tashkent, Uzbekistan, studying modern web development alongside practical AI engineering and machine learning fundamentals.",
+      "Learned the basics of web development and frontend structure.",
+    subjects: ["HTML", "CSS", "JavaScript", "PHP", "Webpack"],
+  },
+  {
+    title: "Frontend Development Program",
+    provider: "IT Park",
+    period: "2024",
+    location: "Tashkent, Uzbekistan",
+    focus: "React, Next.js, TypeScript, SCSS",
+    description:
+      "Studied modern frontend tools and built work with React-based stack.",
+    subjects: ["React", "Next.js", "TypeScript", "SCSS"],
+  },
+  {
+    title: "Full Scholarship Program in AI & ML",
+    provider: "Bepro",
+    period: "2026",
+    location: "Tashkent, Uzbekistan",
+    focus: "Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn",
+    description:
+      "Studied AI and machine learning basics with Python and data tools.",
+    subjects: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+    ],
   },
 ];
 
@@ -297,20 +330,3 @@ export const contactLinks: ContactLink[] = [
   },
 ];
 
-export const footerLinks = [
-  {
-    label: "GitHub",
-    href: "https://github.com/abdulazizyusupaliev",
-    icon: FolderGit2,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/abdulaziz-yusupaliev-521166377",
-    icon: Network,
-  },
-  {
-    label: "Email",
-    href: "mailto:abdulazizyusupaliev009@gmail.com",
-    icon: ArrowUpRight,
-  },
-];
